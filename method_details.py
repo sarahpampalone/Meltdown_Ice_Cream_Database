@@ -1,11 +1,12 @@
 def details_start(ice_cream_inventory, topping_inventory, paper_inventory):
     print("\nWould you like to see\n1. Ice cream flavors\n2. Toppings\n3. Paper products")
-    choice = input()
+    choice = input() #gets user input
     try:
-        choice = int(choice)
+        choice = int(choice) #converts input to int
     except ValueError:
         print("Please enter a number.")
     else:
+        #calls corresponding function
         if choice == 1:
             icecream(ice_cream_inventory, topping_inventory, paper_inventory)
         elif choice == 2:
