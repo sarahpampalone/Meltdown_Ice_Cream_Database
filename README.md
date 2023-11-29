@@ -81,11 +81,16 @@ Created with the intent of sharing responsibilities with supervisors
 -If the boolean value mon is True, the information is passed to method_export.py
 
 ## method_order.py
+### place_order method
 -Provides a menu for the user to select which vendor they would like to see information about, along with ordering deadlines and delivery days (names of the vendors have been edited for anonymity)
 -The user's input is read and passes through a series of if statements
 -The arrays ice_cream_inventory, topping_inventory, and paper_inventory are iterated through to find vendor attributes that are equal to the previously selected vendor
 -The index of the name of the object is read from the fullinventory array and passed as an index into to the full_sales array, as the two are corresponding
 -A list is printed with each item that needs to be ordered and exactly how many units need to be ordered
+-Passes to order_control method
+### order_control method
+-Allows the user to choose if they would like to view information regarding ordering with another vendor
+-Passes back to the place_order method
 
 ## method_export.py
 -Uses pandas and datetime
