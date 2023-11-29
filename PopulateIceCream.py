@@ -2,6 +2,7 @@ from IceCreamFlavor import *
 
 
 def pop_ice_cream(ice_cream_inventory):
+    #CREATES INSTANCES OF EACH ITEM
     PartyCake = IceCreamFlavor()
     ChocolateChipCookie = IceCreamFlavor()
     CookiesAndCream = IceCreamFlavor()
@@ -36,6 +37,7 @@ def pop_ice_cream(ice_cream_inventory):
     PineappleDole = IceCreamFlavor()
     StrawberryDole = IceCreamFlavor()
 
+    #SETS ATTRIBUTE VALUES
     Banana.name="Banana"
     Banana.description="Classic!"
     Banana.vendor="Vendor1"
@@ -249,13 +251,16 @@ def pop_ice_cream(ice_cream_inventory):
     PineappleDole.vendor="Vendor4"
     PineappleDole.standard_amount=4
     PineappleDole.price=90
+    PineappleDole.milk=False
 
     StrawberryDole.name="Strawberry Dole Whip"
     StrawberryDole.description="Vegan soft serve alternative"
     StrawberryDole.vendor="Vendor4"
     StrawberryDole.standard_amount=4
     StrawberryDole.price=90
+    StrawberryDole.milk=False
 
+    #POPULATES ARRAY
     ice_cream_inventory.append([Banana, BlackRaspberry, BlueberryPie, ButterPecan, Chocolate, ChocolateChipCookie, 
                                 ChocolatePeanutButter, Coffee, CookieDough, CookiesAndCream, CottonCandy, CherryVanilla, 
                                 Chocolate, JerseyShore, MidnightJerseyShore, Mint, Mochachino, Moosetracks, Nutterbutter, 
