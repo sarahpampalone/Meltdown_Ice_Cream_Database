@@ -2,6 +2,7 @@ from Topping import *
 
 
 def pop_topping(topping_inventory):
+    #CREATES INSTANCES OF EACH ITEM
     RainbowSprinkles = Topping()
     ChocolateSprinkles = Topping()
     HotFudge = Topping()
@@ -29,6 +30,7 @@ def pop_topping(topping_inventory):
     WaffleCone = Topping()
     Malt = Topping()
 
+    #SETS ATTRIBUTE VALUES
     RainbowSprinkles.name = "Rainbow Sprinkles"
     RainbowSprinkles.temp = "Room"
     RainbowSprinkles.vendor = "Vendor4"
@@ -210,6 +212,7 @@ def pop_topping(topping_inventory):
     WaffleCone.price = 56
     WaffleCone.wheat = True
 
+    #POPULATES ARRAY
     topping_inventory.append([
         RainbowSprinkles, ChocolateSprinkles, Caramel, Cherries, CherrySyrup, ChocChips, ChocolateSyrup,
         CoffeeSyrup, CookieDoughPieces, GummyBears, Heath, HotFudge, MMs, Malt, Marshmallow, Oreos, PBCups, 
