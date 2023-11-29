@@ -1,3 +1,11 @@
+def order_control(ice_cream_inventory, topping_inventory, paper_inventory, fullinventory, full_sales):
+    print("Would you like to place another order? Y/N")
+    choice = input.strip()
+    if choice.upper == "Y":
+        place_order(ice_cream_inventory, topping_inventory, paper_inventory, fullinventory, full_sales)
+    else:
+        print("Thank you!")
+        
 def place_order(ice_cream_inventory, topping_inventory, paper_inventory, fullinventory, full_sales):
     print("Here is the order and delivery schedule:")
     print("1. Vendor1:")
@@ -30,6 +38,7 @@ def place_order(ice_cream_inventory, topping_inventory, paper_inventory, fullinv
             for paper in paper_list:
                 if paper.vendor == "Vendor1":
                     print(f"{paper.name} : {full_sales[fullinventory.index(paper.name)]}")
+        order_control(ice_cream_inventory, topping_inventory, paper_inventory, fullinventory, full_sales)
 
     if choice == "2":
         for flavor_list in ice_cream_inventory:
@@ -45,6 +54,7 @@ def place_order(ice_cream_inventory, topping_inventory, paper_inventory, fullinv
             for paper in paper_list:
                 if paper.vendor == "Vendor2":
                     print(f"{paper.name} : {full_sales[fullinventory.index(paper.name)]}")
+        order_control(ice_cream_inventory, topping_inventory, paper_inventory, fullinventory, full_sales)
 
     if choice == "3":
         for flavor_list in ice_cream_inventory:
@@ -60,6 +70,7 @@ def place_order(ice_cream_inventory, topping_inventory, paper_inventory, fullinv
             for paper in paper_list:
                 if paper.vendor == "Vendor3":
                     print(f"{paper.name} : {full_sales[fullinventory.index(paper.name)]}")
+        order_control(ice_cream_inventory, topping_inventory, paper_inventory, fullinventory, full_sales)
 
     if choice == "4":
         for flavor_list in ice_cream_inventory:
@@ -75,3 +86,4 @@ def place_order(ice_cream_inventory, topping_inventory, paper_inventory, fullinv
             for paper in paper_list:
                 if paper.vendor == "Vendor4":
                     print(f"{paper.name} : {full_sales[fullinventory.index(paper.name)]}")
+        order_control(ice_cream_inventory, topping_inventory, paper_inventory, fullinventory, full_sales)
