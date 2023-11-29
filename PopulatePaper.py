@@ -1,6 +1,7 @@
 from Paper import *
 
 def pop_paper(paper_inventory):
+    #CREATES INSTANCES OF EACH ITEM
     SmallCups = Paper()
     MediumCups = Paper()
     LargeCups = Paper()
@@ -15,6 +16,7 @@ def pop_paper(paper_inventory):
     MilkshakeLids = Paper()
     Straws = Paper()
 
+    #SETS ATTRIBUTE VALUES
     SmallCups.name = "Small Cups"
     SmallCups.details = "8oz"
     SmallCups.vendor = "Vendor2"
@@ -86,6 +88,7 @@ def pop_paper(paper_inventory):
     Straws.standard_amount = 4
     Straws.standard_amount = 40
 
+    #POPULATES ARRAY
     paper_inventory.append([
         SmallCups, MediumCups, LargeCups, SmallLids, MediumLids, LargeLids, SmallBoats, LargeBoats, Spoons, Napkins, MilkshakeCups, MilkshakeLids, Straws
     ])
