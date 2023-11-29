@@ -9,5 +9,3 @@ class Paper:
         # PRICING AND ORDERING
         self.standard_amount = 0
         self.current = 0
-        self.price = 0
-        self.old = 0
