@@ -27,13 +27,7 @@ def take_inventory(ice_cream_inventory, topping_inventory, paper_inventory):
         for flavor in flavor_list:
             print(f"{flavor.name}: ")
             count = int(input())
-            try:
-                count = int(count)
-            except ValueError:
-                print("Invalid input")
-            else: 
-                #goal = flavor.standard_amount
-                full_sales.append(flavor.standard_amount - count)
+            full_sales.append(flavor.standard_amount - count)
 
     print("\nNow toppings")
     for topping_list in topping_inventory:
