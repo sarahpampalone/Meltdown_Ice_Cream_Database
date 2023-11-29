@@ -6,14 +6,6 @@ from method_order import place_order
 
 def inventory_start(ice_cream_inventory, topping_inventory, paper_inventory):
     take_inventory(ice_cream_inventory, topping_inventory, paper_inventory)
-
-def inventory_control(ice_cream_inventory, topping_inventory, paper_inventory):
-    print("Would you like to place another order? Y/N")
-    choice = input.strip()
-    if choice.upper == "Y":
-        place_order(ice_cream_inventory, topping_inventory, paper_inventory)
-    else:
-        print("Thank you!")
         
 def take_inventory(ice_cream_inventory, topping_inventory, paper_inventory):
     print("Is today Monday? Y/N")
